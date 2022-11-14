@@ -10,10 +10,10 @@ export default class SolarAgeCalc {
   }
   
   ageInPlanetYears() {
-    this.mercuryAge = Number((this.earthAge * .24).toFixed(1));
-    this.venusAge = Number((this.earthAge * .62).toFixed(1));
-    this.marsAge = Number((this.earthAge * 1.88).toFixed(1));
-    this.jupiterAge = Number((this.earthAge * 11.86).toFixed(1));
+    this.mercuryAgeData.push(Number((this.earthAge * .24).toFixed(1)));
+    this.venusAgeData.push(Number((this.earthAge * .62).toFixed(1)));
+    this.marsAgeData.push(Number((this.earthAge * 1.88).toFixed(1)));
+    this.jupiterAgeData.push(Number((this.earthAge * 11.86).toFixed(1)));
   }
 
   lifeExpectIfUserHasReligion(boolean) {
