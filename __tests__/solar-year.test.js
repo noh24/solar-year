@@ -74,12 +74,14 @@ describe('SolarAgeCalc', () => {
 
   test('should calculate how many years user have left on earth', () => {
     solarAgeCalc.lifeExpectancy = 25;
-    expect(solarAgeCalc.yearsLeftOrSurpassedOnEarth()).toEqual(5);
+    solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
+    expect(solarAgeCalc.earthAgeData).toEqual([20, 5]);
   });
   
   test('should calculate how many years user surpassed life expectancy', () => {
     solarAgeCalc.lifeExpectancy = 18;
-    expect(solarAgeCalc.yearsLeftOrSurpassedOnEarth()).toEqual(2);
+    solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
+    expect(solarAgeCalc.earthAgeData).toEqual([20, 2]);
   });
   
   test('should add how many years user has left or surpassed life expectancy in mercury age data', () => {
