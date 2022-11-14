@@ -32,6 +32,11 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.marsAge).toEqual(37.6);
   });
 
+  test('should return earth age in jupiter years', () => {
+    solarAgeCalc.ageInJupiterYears(20);
+    expect(solarAgeCalc.jupiterAge).toEqual(237.2);
+  });
+
 
 });
 
