@@ -93,6 +93,18 @@ describe('SolarAgeCalc', () => {
     solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
     expect(solarAgeCalc.venusAgeData).toEqual([3.1]);
   });
+
+  test('should add how many years user has left or surpassed life expectancy in mars age data', () => {
+    solarAgeCalc.lifeExpectancy = 25;
+    solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
+    expect(solarAgeCalc.marsAgeData).toEqual([9.4]);
+  });
+
+  test('should add how many years user has left or surpassed life expectancy in jupiter age data', () => {
+    solarAgeCalc.lifeExpectancy = 25;
+    solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
+    expect(solarAgeCalc.jupiterAgeData).toEqual([59.3]);
+  });
 });
 
 //get users earth years
