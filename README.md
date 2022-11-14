@@ -1,7 +1,7 @@
 # Project Name
 By Brian Noh  
-Epicodus Independent Project: 
-_Currently not deployed_: [Check out the project here](deployed.github.com)
+Epicodus Independent Project: Solar Year
+_Currently not deployed_: [Check out the project here](noh24.github.io/solar-year)
 
 ## Technologies Used  
 * HTML
@@ -11,21 +11,27 @@ _Currently not deployed_: [Check out the project here](deployed.github.com)
 * Web API
 
 ## Description
+This web application will allow users to input their age in Earth years and returns:
 
+* Age in Mercury years
+* Age in Venus years
+* Age in Mars years
+* Age in Jupiter years
+* Life expectancy
 
 ## Setup/Installation Requirements
 * You will need [VS Code](https://code.visualstudio.com/), [Node.js](https://nodejs.org/en/download/) and [Git](https://docs.github.com/en/get-started/quickstart/set-up-git) set up and installed.
 * Open Terminal and enter:  
   ```
   $ cd Desktop
-  $ git clone file_url
-  $ cd file-name
+  $ git clone https://github.com/noh24/solar-year.git
+  $ cd solar-year
   $ npm install
   $ npm run start
   ```
 __Or__   
 * Clone repository in Desktop through Terminal
-* Change current directory to root directory of file-name
+* Change current directory to root directory of solar-year
 * Enter in Terminal:  
   ```
   $ npm install
