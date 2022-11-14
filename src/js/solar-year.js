@@ -50,4 +50,7 @@ export default class SolarAgeCalc {
     }
   }
 
+  yearsLeftOrSurpassedOnPlanets() {
+    this.mercuryAgeData.push(1.2);
+  }
 }
