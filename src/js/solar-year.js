@@ -34,6 +34,10 @@ export default class SolarAgeCalc {
   }
 
   lifeExpectBasedOnSteps(numberOfSteps) {
-    this.lifeExpectancy += 5;
+    if (numberOfSteps < 8000) {
+      this.lifeExpectancy += 5;
+    } else {
+      this.lifeExpectancy += 10;
+    }
   }
 }
