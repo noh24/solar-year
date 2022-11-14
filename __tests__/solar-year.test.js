@@ -26,6 +26,13 @@ describe('SolarAgeCalc', () => {
     solarAgeCalc.ageInVenusYears(20);
     expect(solarAgeCalc.venusAge).toEqual(12.4);
   });
+  
+  test('should return earth age in mars years', () => {
+    solarAgeCalc.ageInMarsYears(20);
+    expect(solarAgeCalc.marsAge).toEqual(37.6);
+  });
+
+
 });
 
 //get users earth years
