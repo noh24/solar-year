@@ -19,22 +19,22 @@ describe('SolarAgeCalc', () => {
 
   test('should return earth age in mercury years', () => {
     solarAgeCalc.ageInPlanetYears();
-    expect(solarAgeCalc.mercuryAgeData).toEqual([4.8]);
+    expect(solarAgeCalc.mercuryAgeData).toEqual([83.3]);
   }); 
   
   test('should return earth age in venus years', () => {
     solarAgeCalc.ageInPlanetYears();
-    expect(solarAgeCalc.venusAgeData).toEqual([12.4]);
+    expect(solarAgeCalc.venusAgeData).toEqual([32.3]);
   }); 
   
   test('should return earth age in mars years', () => {
     solarAgeCalc.ageInPlanetYears();
-    expect(solarAgeCalc.marsAgeData).toEqual([37.6]);
+    expect(solarAgeCalc.marsAgeData).toEqual([10.6]);
   });
 
   test('should return earth age in jupiter years', () => {
     solarAgeCalc.ageInPlanetYears();
-    expect(solarAgeCalc.jupiterAgeData).toEqual([237.2]);
+    expect(solarAgeCalc.jupiterAgeData).toEqual([1.7]);
   });
 
   test('should add to life expectancy based on whether user has a religion', () => {
@@ -87,24 +87,24 @@ describe('SolarAgeCalc', () => {
   test('should add how many years user has left or surpassed life expectancy in mercury age data', () => {
     solarAgeCalc.lifeExpectancy = 25;
     solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
-    expect(solarAgeCalc.mercuryAgeData).toEqual([1.2]);
+    expect(solarAgeCalc.mercuryAgeData).toEqual([20.8]);
   });
   
   test('should add how many years user has left or surpassed life expectancy in venus age data', () => {
     solarAgeCalc.lifeExpectancy = 25;
     solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
-    expect(solarAgeCalc.venusAgeData).toEqual([3.1]);
+    expect(solarAgeCalc.venusAgeData).toEqual([8.1]);
   });
 
   test('should add how many years user has left or surpassed life expectancy in mars age data', () => {
     solarAgeCalc.lifeExpectancy = 25;
     solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
-    expect(solarAgeCalc.marsAgeData).toEqual([9.4]);
+    expect(solarAgeCalc.marsAgeData).toEqual([2.7]);
   });
 
   test('should add how many years user has left or surpassed life expectancy in jupiter age data', () => {
     solarAgeCalc.lifeExpectancy = 25;
     solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
-    expect(solarAgeCalc.jupiterAgeData).toEqual([59.3]);
+    expect(solarAgeCalc.jupiterAgeData).toEqual([.4]);
   });
 });
