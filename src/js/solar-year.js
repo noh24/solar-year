@@ -20,4 +20,8 @@ export default class SolarAgeCalc {
   ageInMarsYears(earthAge) {
     this.marsAge = Number((earthAge * 1.88).toFixed(1));
   }
+
+  ageInJupiterYears(earthAge) {
+    this.jupiterAge = Number((earthAge * 11.86).toFixed(1));
+  }
 }
