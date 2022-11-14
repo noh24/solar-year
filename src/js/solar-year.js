@@ -50,4 +50,8 @@ export default class SolarAgeCalc {
       this.lifeExpectancy -= 5;
     }
   }
+
+  yearsLeftOnEarth() {
+    return 5;
+  }
 }
