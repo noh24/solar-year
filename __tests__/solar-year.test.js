@@ -3,10 +3,12 @@ import SolarAgeCalc from './../src/js/solar-year.js'
 
 describe('SolarAgeCalc', () => {
 
-  test('should create SolarAgeCalc object with 3 properties', () => {
-    let solarAgeCalc = new SolarAgeCalc("john", 23);
+  test('call SolarAgeCalc constructor and return 7 properties', () => {
+    let solarAgeCalc = new SolarAgeCalc("john", 20);
+    solarAgeCalc;
+
     expect(solarAgeCalc.name).toEqual("john");
-    expect(solarAgeCalc.earthAge).toEqual(23);
+    expect(solarAgeCalc.earthAge).toEqual(20);
     expect(solarAgeCalc.lifeExpectancy).toEqual(0);
     expect(solarAgeCalc.mercuryAge).toEqual(0);
     expect(solarAgeCalc.venusAge).toEqual(0);
