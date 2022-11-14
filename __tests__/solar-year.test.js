@@ -81,8 +81,13 @@ describe('SolarAgeCalc', () => {
     solarAgeCalc.lifeExpectancy = 18;
     expect(solarAgeCalc.yearsLeftOrSurpassedOnEarth()).toEqual(2);
   });
-
-
+  
+  test('should add how many years user has left or surpassed life expectancy in mercury age data', () => {
+    solarAgeCalc.lifeExpectancy = 25;
+    solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
+    expect(solarAgeCalc.mercuryAgeData).toEqual([1.2]);
+  });
+  
 });
 
 //get users earth years
