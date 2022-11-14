@@ -72,7 +72,10 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.lifeExpectancy).toEqual(-5);
   });
 
- 
+  test('should calculate how many years user have left on earth', () => {
+    solarAgeCalc.lifeExpectancy = 25;
+    expect(solarAgeCalc.yearsLeftOnEarth()).toEqual(5);
+  });
 });
 
 //get users earth years
