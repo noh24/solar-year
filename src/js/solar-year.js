@@ -51,7 +51,7 @@ export default class SolarAgeCalc {
     }
   }
 
-  yearsLeftOnEarth() {
+  yearsLeftOrSurpassed() {
     return 5;
   }
 }
