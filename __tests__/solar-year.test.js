@@ -11,10 +11,10 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.name).toEqual("john");
     expect(solarAgeCalc.earthAge).toEqual(20);
     expect(solarAgeCalc.lifeExpectancy).toEqual(0);
-    expect(solarAgeCalc.mercuryAge).toEqual(0);
-    expect(solarAgeCalc.venusAge).toEqual(0);
-    expect(solarAgeCalc.marsAge).toEqual(0);
-    expect(solarAgeCalc.jupiterAge).toEqual(0);
+    expect(solarAgeCalc.mercuryAgeData).toEqual([]);
+    expect(solarAgeCalc.venusAgeData).toEqual([]);
+    expect(solarAgeCalc.marsAgeData).toEqual([]);
+    expect(solarAgeCalc.jupiterAgeData).toEqual([]);
   });
 
   test('should return earth age in mercury years', () => {
@@ -81,6 +81,8 @@ describe('SolarAgeCalc', () => {
     solarAgeCalc.lifeExpectancy = 18;
     expect(solarAgeCalc.yearsLeftOrSurpassedOnEarth()).toEqual(2);
   });
+
+
 });
 
 //get users earth years
