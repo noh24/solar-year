@@ -1,5 +1,6 @@
 export default class SolarAgeCalc {
   constructor(name, earthAge) {
+    // planetAgeData = [currentAge, years left/surpassed expectancy]
     this.name = name;
     this.earthAgeData = [earthAge];
     this.lifeExpectancy = 0;
@@ -42,16 +43,15 @@ export default class SolarAgeCalc {
     }
   }
 
-  yearsLeftOrSurpassedOnEarth() {
-    if (this.lifeExpectancy >= this.earthAgeData[0]) {
-      return this.lifeExpectancy - this.earthAgeData[0];
-    } else {
-      return this.earthAgeData[0] - this.lifeExpectancy;
-    }
-  }
-
   yearsLeftOrSurpassedOnPlanets() {
-    let years = this.yearsLeftOrSurpassedOnEarth();
+    let years;
+    if (this.lifeExpectancy >= this.earthAgeData[0]) {
+      years = this.lifeExpectancy - this.earthAgeData[0];
+      this.earthAgeData.push(years);
+    } else {
+      years = this.earthAgeData[0] - this.lifeExpectancy;
+      this.earthAgeData.push(years);
+    }
     this.mercuryAgeData.push(Number((years * .24).toFixed(1)));
     this.venusAgeData.push(Number((years * .62).toFixed(1)));
     this.marsAgeData.push(Number((years * 1.88).toFixed(1)));
