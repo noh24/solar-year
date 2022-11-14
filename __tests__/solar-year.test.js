@@ -42,7 +42,10 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.lifeExpectancy).toEqual(70);
   });
   
-  
+  test('should add to life expectancy based on whether user has no religion', () => {
+    solarAgeCalc.lifeExpectIfUserHasReligion(false);
+    expect(solarAgeCalc.lifeExpectancy).toEqual(50);
+  });
 
 
 });
