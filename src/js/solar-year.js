@@ -11,10 +11,10 @@ export default class SolarAgeCalc {
   }
   
   ageInPlanetYears() {
-    this.mercuryAgeData.push(Number((this.earthAgeData[0] * .24).toFixed(1)));
-    this.venusAgeData.push(Number((this.earthAgeData[0] * .62).toFixed(1)));
-    this.marsAgeData.push(Number((this.earthAgeData[0] * 1.88).toFixed(1)));
-    this.jupiterAgeData.push(Number((this.earthAgeData[0] * 11.86).toFixed(1)));
+    this.mercuryAgeData.push(Number((this.earthAgeData[0] / .24).toFixed(1)));
+    this.venusAgeData.push(Number((this.earthAgeData[0] / .62).toFixed(1)));
+    this.marsAgeData.push(Number((this.earthAgeData[0] / 1.88).toFixed(1)));
+    this.jupiterAgeData.push(Number((this.earthAgeData[0] / 11.86).toFixed(1)));
   }
 
   lifeExpectIfUserHasReligion(boolean) {
@@ -52,9 +52,9 @@ export default class SolarAgeCalc {
       years = this.earthAgeData[0] - this.lifeExpectancy;
       this.earthAgeData.push(years);
     }
-    this.mercuryAgeData.push(Number((years * .24).toFixed(1)));
-    this.venusAgeData.push(Number((years * .62).toFixed(1)));
-    this.marsAgeData.push(Number((years * 1.88).toFixed(1)));
-    this.jupiterAgeData.push(Number((years * 11.86).toFixed(1)));
+    this.mercuryAgeData.push(Number((years / .24).toFixed(1)));
+    this.venusAgeData.push(Number((years / .62).toFixed(1)));
+    this.marsAgeData.push(Number((years / 1.88).toFixed(1)));
+    this.jupiterAgeData.push(Number((years / 11.86).toFixed(1)));
   }
 }
