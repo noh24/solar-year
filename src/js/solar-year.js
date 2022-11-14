@@ -11,21 +11,8 @@ export default class SolarAgeCalc {
   
   ageInPlanetYears() {
     this.mercuryAge = Number((this.earthAge * .24).toFixed(1));
-  }
-
-  ageInMercuryYears() {
-    this.mercuryAge = Number((this.earthAge * .24).toFixed(1));
-  }
-
-  ageInVenusYears() {
     this.venusAge = Number((this.earthAge * .62).toFixed(1));
-  }
-  
-  ageInMarsYears() {
     this.marsAge = Number((this.earthAge * 1.88).toFixed(1));
-  }
-
-  ageInJupiterYears() {
     this.jupiterAge = Number((this.earthAge * 11.86).toFixed(1));
   }
 
