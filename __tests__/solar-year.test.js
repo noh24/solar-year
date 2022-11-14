@@ -17,6 +17,11 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.jupiterAge).toEqual(0);
   });
 
+  test('should return earth age in planet years, planet: mercury', () => {
+    solarAgeCalc.ageInPlanetYears();
+    expect(solarAgeCalc.mercuryAge).toEqual(4.8);
+  }); 
+
   test('should return earth age in mercury years', () => {
     solarAgeCalc.ageInMercuryYears();
     expect(solarAgeCalc.mercuryAge).toEqual(4.8);
