@@ -88,7 +88,11 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.mercuryAgeData).toEqual([1.2]);
   });
   
-  
+  test('should add how many years user has left or surpassed life expectancy in venus age data', () => {
+    solarAgeCalc.lifeExpectancy = 25;
+    solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
+    expect(solarAgeCalc.venusAgeData).toEqual([3.1]);
+  });
 });
 
 //get users earth years
