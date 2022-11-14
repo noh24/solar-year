@@ -1,5 +1,5 @@
 
-import SolarAgeCalc from './../src/js/solar-year.js'
+import SolarAgeCalc from './../src/js/solar-year.js';
 
 describe('SolarAgeCalc', () => {
   let solarAgeCalc;
