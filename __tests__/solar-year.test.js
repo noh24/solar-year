@@ -37,7 +37,10 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.jupiterAge).toEqual(237.2);
   });
 
-
+  test('should add to life expectancy based on whether user has a religion or not', () => {
+    solarAgeCalc.lifeExpectIfUserHasReligion(true);
+    expect(solarAgeCalc.lifeExpectancy).toEqual(70);
+  });
 });
 
 //get users earth years
