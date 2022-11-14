@@ -3,10 +3,10 @@ export default class SolarAgeCalc {
     this.name = name;
     this.earthAge = earthAge;
     this.lifeExpectancy = 0;
-    this.mercuryAge = 0;
-    this.venusAge = 0;
-    this.marsAge = 0;
-    this.jupiterAge = 0;
+    this.mercuryAgeData = [];
+    this.venusAgeData = [];
+    this.marsAgeData = [];
+    this.jupiterAgeData = [];
   }
   
   ageInPlanetYears() {
@@ -49,6 +49,5 @@ export default class SolarAgeCalc {
       return this.earthAge - this.lifeExpectancy;
     }
   }
-
 
 }
