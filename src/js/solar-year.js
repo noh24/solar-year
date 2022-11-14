@@ -9,5 +9,7 @@ export default class SolarAgeCalc {
     this.jupiterAge = 0;
   }
 
-
+  ageInMercuryYears(earthAge) {
+    this.mercuryAge = Number((earthAge * .24).toFixed(1));
+  }
 }
