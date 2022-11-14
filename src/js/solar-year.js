@@ -52,6 +52,10 @@ export default class SolarAgeCalc {
   }
 
   yearsLeftOrSurpassed() {
-    return 5;
+    if (this.lifeExpectancy >= this.earthAge) {
+      return this.lifeExpectancy - this.earthAge;
+    } else {
+      return this.earthAge - this.lifeExpectancy;
+    }
   }
 }
