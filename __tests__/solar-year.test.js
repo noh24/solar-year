@@ -108,15 +108,3 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.jupiterAgeData).toEqual([59.3]);
   });
 });
-
-//get users earth years
-  // mercury .24
-  // venus .62
-  // mars 1.88
-  // jupiter 11.86
-  // life expectancy
-    // country of residence
-    // average steps per day
-    // stress level
-  // left years
-  // over years
