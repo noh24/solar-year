@@ -47,7 +47,10 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.lifeExpectancy).toEqual(50);
   });
 
-
+  test('should add life expectancy based on if user takes a daily average of less than 8000', () => {
+    solarAgeCalc.lifeExpectBasedOnSteps(7000);
+    expect(solarAgeCalc.lifeExpectancy).toEqual(10);
+  });
 });
 
 //get users earth years
