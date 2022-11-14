@@ -19,22 +19,22 @@ describe('SolarAgeCalc', () => {
 
   test('should return earth age in mercury years', () => {
     solarAgeCalc.ageInPlanetYears();
-    expect(solarAgeCalc.mercuryAge).toEqual(4.8);
+    expect(solarAgeCalc.mercuryAgeData).toEqual([4.8]);
   }); 
   
   test('should return earth age in venus years', () => {
     solarAgeCalc.ageInPlanetYears();
-    expect(solarAgeCalc.venusAge).toEqual(12.4);
+    expect(solarAgeCalc.venusAgeData).toEqual([12.4]);
   }); 
   
   test('should return earth age in mars years', () => {
     solarAgeCalc.ageInPlanetYears();
-    expect(solarAgeCalc.marsAge).toEqual(37.6);
+    expect(solarAgeCalc.marsAgeData).toEqual([37.6]);
   });
 
   test('should return earth age in jupiter years', () => {
     solarAgeCalc.ageInPlanetYears();
-    expect(solarAgeCalc.jupiterAge).toEqual(237.2);
+    expect(solarAgeCalc.jupiterAgeData).toEqual([237.2]);
   });
 
   test('should add to life expectancy based on whether user has a religion', () => {
