@@ -47,12 +47,12 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.lifeExpectancy).toEqual(50);
   });
 
-  test('should add life expectancy based on if user takes a daily average of less than 8000', () => {
+  test('should add life expectancy based on if user takes a daily average step of less than 8000', () => {
     solarAgeCalc.lifeExpectBasedOnSteps(7000);
     expect(solarAgeCalc.lifeExpectancy).toEqual(5);
   });
 
-  test('should add life expectancy based on if user takes a daily average of equals to or more than 8000', () => {
+  test('should add life expectancy based on if user takes a daily average step of equals to or more than 8000', () => {
     solarAgeCalc.lifeExpectBasedOnSteps(8000);
     expect(solarAgeCalc.lifeExpectancy).toEqual(10);
   });
