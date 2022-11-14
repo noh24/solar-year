@@ -21,6 +21,11 @@ describe('SolarAgeCalc', () => {
     solarAgeCalc.ageInMercuryYears(20);
     expect(solarAgeCalc.mercuryAge).toEqual(4.8);
   });
+
+  test('should return earth age in venus years', () => {
+    solarAgeCalc.ageInVenusYears(20);
+    expect(solarAgeCalc.venusAge).toEqual(12.4);
+  });
 });
 
 //get users earth years
