@@ -24,4 +24,8 @@ export default class SolarAgeCalc {
   ageInJupiterYears(earthAge) {
     this.jupiterAge = Number((earthAge * 11.86).toFixed(1));
   }
+
+  lifeExpectIfUserHasReligion(boolean) {
+    this.lifeExpectancy += 70;
+  }
 }
