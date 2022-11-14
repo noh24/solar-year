@@ -56,6 +56,11 @@ describe('SolarAgeCalc', () => {
     solarAgeCalc.lifeExpectBasedOnSteps(8000);
     expect(solarAgeCalc.lifeExpectancy).toEqual(10);
   });
+
+  test('should add life expectancy based on users daily stress level: low', () => {
+    solarAgeCalc.lifeExpectBasedOnStressLevel("low");
+    expect(solarAgeCalc.lifeExpectancy).toEqual(10);
+  });
 });
 
 //get users earth years
