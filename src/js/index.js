@@ -1,4 +1,5 @@
 import SolarAgeCalc from './solar-year.js';
+import './../css/output.css';
 
 window.addEventListener('load', function() {
   document.querySelector('form').addEventListener('submit', function (e) {
@@ -10,7 +11,7 @@ window.addEventListener('load', function() {
     document.getElementById('name').value = null;
     document.getElementById('age').value = null;
     document.getElementById('steps').value = null;
-  })
+  });
 });
 
 function handleFormSubmission() {
