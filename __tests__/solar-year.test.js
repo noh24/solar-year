@@ -2,11 +2,12 @@
 import SolarAgeCalc from './../src/js/solar-year.js'
 
 describe('SolarAgeCalc', () => {
+  let solarAgeCalc;
+  beforeEach(() => {
+    solarAgeCalc = new SolarAgeCalc("john", 20);
+  });
 
   test('call SolarAgeCalc constructor and return 7 properties', () => {
-    let solarAgeCalc = new SolarAgeCalc("john", 20);
-    solarAgeCalc;
-
     expect(solarAgeCalc.name).toEqual("john");
     expect(solarAgeCalc.earthAge).toEqual(20);
     expect(solarAgeCalc.lifeExpectancy).toEqual(0);
@@ -16,6 +17,10 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.jupiterAge).toEqual(0);
   });
 
+  test('should return earth age in mercury years', () => {
+    solarAgeCalc.ageInMercuryYears(20);
+    expect(solarAgeCalc.mercuryAge).toEqual(4.8);
+  });
 });
 
 //get users earth years
