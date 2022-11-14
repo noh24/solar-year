@@ -54,5 +54,7 @@ export default class SolarAgeCalc {
     let years = this.yearsLeftOrSurpassedOnEarth();
     this.mercuryAgeData.push(Number((years * .24).toFixed(1)));
     this.venusAgeData.push(Number((years * .62).toFixed(1)));
+    this.marsAgeData.push(Number((years * 1.88).toFixed(1)));
+    this.jupiterAgeData.push(Number((years * 11.86).toFixed(1)));
   }
 }
