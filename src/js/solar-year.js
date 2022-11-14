@@ -18,7 +18,7 @@ export default class SolarAgeCalc {
   }
 
   lifeExpectIfUserHasReligion(boolean) {
-    if (boolean === true) {
+    if (boolean === "true") {
       this.lifeExpectancy += 70;
     } else {
       this.lifeExpectancy += 50;
