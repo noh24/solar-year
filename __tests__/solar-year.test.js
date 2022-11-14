@@ -9,7 +9,7 @@ describe('SolarAgeCalc', () => {
 
   test('call SolarAgeCalc constructor and return 7 properties', () => {
     expect(solarAgeCalc.name).toEqual("john");
-    expect(solarAgeCalc.earthAge).toEqual(20);
+    expect(solarAgeCalc.earthAgeData).toEqual([20]);
     expect(solarAgeCalc.lifeExpectancy).toEqual(0);
     expect(solarAgeCalc.mercuryAgeData).toEqual([]);
     expect(solarAgeCalc.venusAgeData).toEqual([]);
@@ -87,6 +87,7 @@ describe('SolarAgeCalc', () => {
     solarAgeCalc.yearsLeftOrSurpassedOnPlanets();
     expect(solarAgeCalc.mercuryAgeData).toEqual([1.2]);
   });
+  
   
 });
 
