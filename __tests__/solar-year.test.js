@@ -17,28 +17,23 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.jupiterAge).toEqual(0);
   });
 
-  test('should return earth age in planet years, planet: mercury', () => {
+  test('should return earth age in mercury years', () => {
     solarAgeCalc.ageInPlanetYears();
     expect(solarAgeCalc.mercuryAge).toEqual(4.8);
   }); 
-
-  test('should return earth age in mercury years', () => {
-    solarAgeCalc.ageInMercuryYears();
-    expect(solarAgeCalc.mercuryAge).toEqual(4.8);
-  });
-
+  
   test('should return earth age in venus years', () => {
-    solarAgeCalc.ageInVenusYears();
+    solarAgeCalc.ageInPlanetYears();
     expect(solarAgeCalc.venusAge).toEqual(12.4);
-  });
+  }); 
   
   test('should return earth age in mars years', () => {
-    solarAgeCalc.ageInMarsYears();
+    solarAgeCalc.ageInPlanetYears();
     expect(solarAgeCalc.marsAge).toEqual(37.6);
   });
 
   test('should return earth age in jupiter years', () => {
-    solarAgeCalc.ageInJupiterYears();
+    solarAgeCalc.ageInPlanetYears();
     expect(solarAgeCalc.jupiterAge).toEqual(237.2);
   });
 
