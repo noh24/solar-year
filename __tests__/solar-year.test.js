@@ -77,7 +77,10 @@ describe('SolarAgeCalc', () => {
     expect(solarAgeCalc.yearsLeftOrSurpassed()).toEqual(5);
   });
   
-
+  test('should calculate how many years user surpassed life expectancy', () => {
+    solarAgeCalc.lifeExpectancy = 18;
+    expect(solarAgeCalc.yearsLeftOrSurpassed()).toEqual(2);
+  });
 });
 
 //get users earth years
