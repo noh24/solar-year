@@ -18,22 +18,22 @@ describe('SolarAgeCalc', () => {
   });
 
   test('should return earth age in mercury years', () => {
-    solarAgeCalc.ageInMercuryYears(20);
+    solarAgeCalc.ageInMercuryYears();
     expect(solarAgeCalc.mercuryAge).toEqual(4.8);
   });
 
   test('should return earth age in venus years', () => {
-    solarAgeCalc.ageInVenusYears(20);
+    solarAgeCalc.ageInVenusYears();
     expect(solarAgeCalc.venusAge).toEqual(12.4);
   });
   
   test('should return earth age in mars years', () => {
-    solarAgeCalc.ageInMarsYears(20);
+    solarAgeCalc.ageInMarsYears();
     expect(solarAgeCalc.marsAge).toEqual(37.6);
   });
 
   test('should return earth age in jupiter years', () => {
-    solarAgeCalc.ageInJupiterYears(20);
+    solarAgeCalc.ageInJupiterYears();
     expect(solarAgeCalc.jupiterAge).toEqual(237.2);
   });
 
@@ -71,6 +71,8 @@ describe('SolarAgeCalc', () => {
     solarAgeCalc.lifeExpectBasedOnStressLevel("high");
     expect(solarAgeCalc.lifeExpectancy).toEqual(-5);
   });
+
+ 
 });
 
 //get users earth years
