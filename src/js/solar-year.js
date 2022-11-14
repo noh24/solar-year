@@ -12,4 +12,8 @@ export default class SolarAgeCalc {
   ageInMercuryYears(earthAge) {
     this.mercuryAge = Number((earthAge * .24).toFixed(1));
   }
+
+  ageInVenusYears(earthAge) {
+    this.venusAge = Number((earthAge * .62).toFixed(1));
+  }
 }
