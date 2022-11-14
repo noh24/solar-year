@@ -42,6 +42,10 @@ export default class SolarAgeCalc {
   }
 
   lifeExpectBasedOnStressLevel(stressLevel) {
-    this.lifeExpectancy += 10;
+    if (stressLevel === 'low') {
+      this.lifeExpectancy += 10;
+    } else {
+      this.lifeExpectancy += 7;
+    }
   }
 }
