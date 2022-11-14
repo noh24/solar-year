@@ -2,14 +2,18 @@
 import SolarAgeCalc from './../src/js/solar-year.js'
 
 describe('SolarAgeCalc', () => {
+  let solarAgeCalc;
+  beforeEach(() => {
+    solarAgeCalc = new SolarAgeCalc("john", 23);
+  });
 
   test('should create SolarAgeCalc object with 3 properties', () => {
-    let solarAgeCalc = new SolarAgeCalc("john", 23);
-    solarAgeCalc;
     expect(solarAgeCalc.name).toEqual("john");
     expect(solarAgeCalc.earthAge).toEqual(23);
     expect(solarAgeCalc.lifeExpectancy).toEqual(0);
   });
+
+
 });
 
 //get users earth years
