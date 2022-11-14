@@ -19,7 +19,7 @@ module.exports = {
       verbose: true
     }),
     new HtmlWebpackPlugin({
-      title: 'epicodus-dev-env-template',
+      title: 'solar-year',
       template: './src/html/index.html',
       inject: 'body'
     })
