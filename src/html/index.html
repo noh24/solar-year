@@ -4,59 +4,77 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./../css/output.css">
   <title>Solar Year</title>
 </head>
-<body>
-  <div>
-    <form>
-      <label for="name">Enter Name: </label>
-      <input type="text" id="name" name="name" required>
-      <label for="age">Enter Your Age: </label>
-      <input type="number" id="age" name="age" required>
-      <fieldset id="religious">
-        <legend>Are you religious?</legend>
-        <input type="radio" name="religious" id="true" checked>
-        <label for="true">Yes</label>
-        <input type="radio" name="religious" id="false">
-        <label for="false">No</label>
-      </fieldset>
-      <label for="steps">Average daily steps?: </label>
-      <input type="number" id="steps" name="steps" required>
-      <fieldset>
-        <legend>Average Stress Level?</legend>
-        <input type="radio" name="stress" id="low" checked>
-        <label for="low">Low</label>
-        <input type="radio" name="stress" id="medium">
-        <label for="medium">Medium</label>
-        <input type="radio" name="stress" id="high">
-        <label for="high">High</label>
-      </fieldset>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-  <div id="content" class="hidden">
-    <p><span id="user-name"></span></p>
-    <p><span id="user-age"></span> years old in Earth years.</p>
-    <p><span id="mercury-age"></span> years old in Mercury years.</p>
-    <p><span id="venus-age"></span> years old in Venus years.</p>
-    <p><span id="mars-age"></span> years old in Mars years.</p>
-    <p><span id="jupiter-age"></span> years old in Jupiter years.</p>
-  </div>
-  <div id="years-left" class="hidden">
-    <h3>Life Expectancy</h3>
-    <p><span id="earth-years-left"></span> years left on Earth.</p>
-    <p><span id="mercury-years-left"></span> years left on Mercury.</p>
-    <p><span id="venus-years-left"></span> years left on Venus.</p>
-    <p><span id="mars-years-left"></span> years left on Mars.</p>
-    <p><span id="jupiter-years-left"></span> years left on Jupiter.</p>
-  </div>
-  <div id="years-passed" class="hidden">
-    <h3>Surpassed Life Expectancy</h3>
-    <p><span id="earth-years-passed"></span> years surpassing life expectancy on Earth.</p>
-    <p><span id="mercury-years-passed"></span> years surpassing life expectancy on Mercury.</p>
-    <p><span id="venus-years-passed"></span> years surpassing life expectancy on Venus.</p>
-    <p><span id="mars-years-passed"></span> years surpassing life expectancy on Mars.</p>
-    <p><span id="jupiter-years-passed"></span> years surpassing life expectancy on Jupiter.</p>
+<body class="h-screen flex bg-space-pattern bg-cover bg-fixed font-sans box-border">
+  <div class="h-screen flex w-screen bg-black bg-opacity-50 bg-blend-overlay">
+    <div class="container rounded-lg mx-auto max-w-md my-auto flex flex-col items-center justify-center bg-blue-100 p-3 bg-opacity-80">
+      <h1 class="text-5xl border-b-2 pb-5">Solar Years</h1>
+      <form class="flex flex-col w-max gap-2 items-end p-3 pb-5 border-b-2">
+        <div class="flex items-center justify-between w-96">
+          <label for="name" class="font-bold">Enter Name: </label>
+          <input class="border-2 border-blue-50 rounded-full pl-2 placeholder-gray-800" type="text" id="name" name="name" placeholder="Name" required>
+        </div>
+        <div class="flex items-center justify-between w-96"> 
+          <label for="age" class="font-bold">Enter Your Age: </label>
+          <input class="border-2 border-blue-50 rounded-full pl-2 placeholder-gray-800" type="number" id="age" name="age" placeholder="Age" required>
+        </div>
+        <fieldset id="religious">
+          <div class="font-bold flex items-center justify-between w-96">
+            Are you religious?
+            <div class="font-medium text-gray-700">
+              <input type="radio" name="religious" id="true" checked>
+              <label for="true">Yes</label>
+              <input type="radio" name="religious" id="false">
+              <label for="false">No</label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="flex items-center justify-between w-96">
+          <label for="steps" class="font-bold">Average daily steps?: </label>
+          <input class="border-2 border-blue-50 rounded-full pl-2 placeholder-gray-800" type="number" id="steps" name="steps" placeholder="Steps" required>
+        </div>
+        <fieldset>
+          <div class="font-bold flex items-center justify-between w-96">
+            Average Stress Level?
+            <div class="font-medium text-gray-700">
+              <input type="radio" name="stress" id="low" checked>
+              <label for="low">Low</label>
+              <input type="radio" name="stress" id="medium">
+              <label for="medium">Medium</label>
+              <input type="radio" name="stress" id="high">
+              <label for="high">High</label>
+            </div>
+          </div>
+        </fieldset>
+        <button class="self-center border-b-2 border-r-2 p-1 pl-2 pr-2 border-gray-400 bg-blue-200 rounded-full hover:bg-blue-300 focus:bg-blue-200 " type="submit">Submit</button>
+      </form>
+      <div id="content" class="hidden border-2">
+        <p><span id="user-name"></span></p>
+        <p><span id="user-age"></span> years old in Earth years.</p>
+        <p><span id="mercury-age"></span> years old in Mercury years.</p>
+        <p><span id="venus-age"></span> years old in Venus years.</p>
+        <p><span id="mars-age"></span> years old in Mars years.</p>
+        <p><span id="jupiter-age"></span> years old in Jupiter years.</p>
+      </div>
+      <div id="years-left" class="hidden border-2">
+        <h3>Life Expectancy</h3>
+        <p><span id="earth-years-left"></span> years left on Earth.</p>
+        <p><span id="mercury-years-left"></span> years left on Mercury.</p>
+        <p><span id="venus-years-left"></span> years left on Venus.</p>
+        <p><span id="mars-years-left"></span> years left on Mars.</p>
+        <p><span id="jupiter-years-left"></span> years left on Jupiter.</p>
+      </div>
+      <div id="years-passed" class="hidden border-2">
+        <h3>Surpassed Life Expectancy</h3>
+        <p><span id="earth-years-passed"></span> years surpassing life expectancy on Earth.</p>
+        <p><span id="mercury-years-passed"></span> years surpassing life expectancy on Mercury.</p>
+        <p><span id="venus-years-passed"></span> years surpassing life expectancy on Venus.</p>
+        <p><span id="mars-years-passed"></span> years surpassing life expectancy on Mars.</p>
+        <p><span id="jupiter-years-passed"></span> years surpassing life expectancy on Jupiter.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
