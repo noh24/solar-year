@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./../css/output.css">
   <title>Solar Year</title>
 </head>
 <body class="h-screen flex bg-space-pattern bg-cover bg-fixed font-sans box-border">
   <div class="h-screen flex w-screen bg-black bg-opacity-50 bg-blend-overlay">
     <div class="container rounded-lg mx-auto max-w-md my-auto flex flex-col items-center justify-center bg-blue-100 p-3 bg-opacity-80">
-      <h1 class="text-5xl border-b-2 pb-5">Solar Years</h1>
-      <form class="flex flex-col w-max gap-2 items-end p-3 pb-5 border-b-2">
+      <form class="flex flex-col gap-2 items-end p-3 pb-5 border-b-2">
+        <h1 class="text-5xl border-b-2 mb-3 pb-5 self-center">Solar Years</h1>
         <div class="flex items-center justify-between w-96">
           <label for="name" class="font-bold">Enter Name: </label>
           <input class="border-2 border-blue-50 rounded-full pl-2 placeholder-gray-800" type="text" id="name" name="name" placeholder="Name" required>
@@ -50,29 +49,29 @@
         </fieldset>
         <button class="self-center border-b-2 border-r-2 p-1 pl-2 pr-2 border-gray-400 bg-blue-200 rounded-full hover:bg-blue-300 focus:bg-blue-200 " type="submit">Submit</button>
       </form>
-      <div id="content" class="hidden border-2">
-        <p><span id="user-name"></span></p>
-        <p><span id="user-age"></span> years old in Earth years.</p>
-        <p><span id="mercury-age"></span> years old in Mercury years.</p>
-        <p><span id="venus-age"></span> years old in Venus years.</p>
-        <p><span id="mars-age"></span> years old in Mars years.</p>
-        <p><span id="jupiter-age"></span> years old in Jupiter years.</p>
+      <div id="content" class="hidden flex flex-col w-96 gap-2 items-start p-3 pb-5 border-b-2">
+        <p><span id="user-name" class="text-3xl"></span></p>
+        <p><span id="user-age" class="font-bold"></span> years old in Earth years.</p>
+        <p><span id="mercury-age" class="font-bold"></span> years old in Mercury years.</p>
+        <p><span id="venus-age" class="font-bold"></span> years old in Venus years.</p>
+        <p><span id="mars-age" class="font-bold"></span> years old in Mars years.</p>
+        <p><span id="jupiter-age" class="font-bold"></span> years old in Jupiter years.</p>
       </div>
-      <div id="years-left" class="hidden border-2">
-        <h3>Life Expectancy</h3>
-        <p><span id="earth-years-left"></span> years left on Earth.</p>
-        <p><span id="mercury-years-left"></span> years left on Mercury.</p>
-        <p><span id="venus-years-left"></span> years left on Venus.</p>
-        <p><span id="mars-years-left"></span> years left on Mars.</p>
-        <p><span id="jupiter-years-left"></span> years left on Jupiter.</p>
+      <div id="years-left" class="hidden flex flex-col w-96 gap-2 items-end p-3 pb-5 border-b-2">
+        <h3 class="text-3xl">Life Expectancy</h3>
+        <p><span id="earth-years-left" class="font-bold"></span> years left on Earth.</p>
+        <p><span id="mercury-years-left" class="font-bold"></span> years left on Mercury.</p>
+        <p><span id="venus-years-left" class="font-bold"></span> years left on Venus.</p>
+        <p><span id="mars-years-left" class="font-bold"></span> years left on Mars.</p>
+        <p><span id="jupiter-years-left" class="font-bold"></span> years left on Jupiter.</p>
       </div>
-      <div id="years-passed" class="hidden border-2">
-        <h3>Surpassed Life Expectancy</h3>
-        <p><span id="earth-years-passed"></span> years surpassing life expectancy on Earth.</p>
-        <p><span id="mercury-years-passed"></span> years surpassing life expectancy on Mercury.</p>
-        <p><span id="venus-years-passed"></span> years surpassing life expectancy on Venus.</p>
-        <p><span id="mars-years-passed"></span> years surpassing life expectancy on Mars.</p>
-        <p><span id="jupiter-years-passed"></span> years surpassing life expectancy on Jupiter.</p>
+      <div id="years-passed" class=" hidden flex flex-col max-w-x1 w-96 gap-2 items-end p-3 pb-5 border-b-2">
+        <h3 class="text-3xl">Surpassed Life Expectancy</h3>
+        <p><span id="earth-years-passed" class="font-bold"></span> years surpassed life expectancy on Earth.</p>
+        <p><span id="mercury-years-passed" class="font-bold"></span> years surpassed life expectancy on Mercury.</p>
+        <p><span id="venus-years-passed" class="font-bold"></span> years surpassed life expectancy on Venus.</p>
+        <p><span id="mars-years-passed" class="font-bold"></span> years surpassed life expectancy on Mars.</p>
+        <p><span id="jupiter-years-passed" class="font-bold"></span> years surpassed life expectancy on Jupiter.</p>
       </div>
     </div>
   </div>
