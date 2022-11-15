@@ -9,6 +9,7 @@ _Currently not deployed_: [Check out the project here](noh24.github.io/solar-yea
 * JavaScript
 * Node.js
 * Web API
+* Tailwind CSS
 
 ## Description
 This web application will allow users to input their age in Earth years and returns:
