@@ -8,7 +8,8 @@
     "start": "npm run build && npm run tw && webpack-dev-server --open --mode=development",
     "lint": "eslint src/*.js",
     "test": "jest --coverage",
-    "tw": "tailwindcss -i ./src/css/styles.css -o ./src/css/output.css"
+    "tw": "tailwindcss -i ./src/css/styles.css -o ./src/css/output.css",
+    "tw-watch": "tailwindcss -i ./src/css/styles.css -o ./src/css/output.css --watch"
   },
   "keywords": [],
   "author": "",
