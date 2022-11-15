@@ -37,6 +37,7 @@ function handleFormSubmission() {
 function displayContent(solarAgeCalc) {
   document.getElementById('user-name').innerText = solarAgeCalc.name;
   document.getElementById('user-age').innerText = solarAgeCalc.earthAgeData[0];
+  document.getElementById('life-expectancy').innerText = solarAgeCalc.lifeExpectancy;
   document.getElementById('mercury-age').innerText = solarAgeCalc.mercuryAgeData[0];
   document.getElementById('venus-age').innerText = solarAgeCalc.venusAgeData[0];
   document.getElementById('mars-age').innerText = solarAgeCalc.marsAgeData[0];
