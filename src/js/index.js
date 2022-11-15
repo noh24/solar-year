@@ -4,6 +4,10 @@ import './../css/output.css';
 window.addEventListener('load', function() {
   document.querySelector('form').addEventListener('submit', function (e) {
     e.preventDefault();
+    document.getElementById('content').classList.add('hidden');
+    document.getElementById('years-left').classList.add('hidden');
+    document.getElementById('years-passed').classList.add('hidden');
+
     let solarAgeCalc;
     solarAgeCalc = handleFormSubmission();
     displayContent(solarAgeCalc);
