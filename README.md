@@ -1,6 +1,6 @@
 # Project Name
 By Brian Noh  
-Epicodus Independent Project: Solar Year
+Epicodus Independent Project: Solar Year  
 _Currently not deployed_: [Check out the project here](noh24.github.io/solar-year)
 
 ## Technologies Used  
@@ -23,21 +23,14 @@ This web application will allow users to input their age in Earth years and retu
 ## Setup/Installation Requirements
 * You will need [VS Code](https://code.visualstudio.com/), [Node.js](https://nodejs.org/en/download/) and [Git](https://docs.github.com/en/get-started/quickstart/set-up-git) set up and installed.
 * Open Terminal and enter:  
-  ```
-  $ cd Desktop
-  $ git clone https://github.com/noh24/solar-year.git
-  $ cd solar-year
-  $ npm install
-  $ npm run start
-  ```
-__Or__   
-* Clone repository in Desktop through Terminal
-* Change current directory to root directory of solar-year
-* Enter in Terminal:  
-  ```
-  $ npm install
-  $ npm run start
-  ```
+  `$ cd Desktop`  
+  `$ git clone https://github.com/noh24/solar-year.git`  
+  `$ cd solar-year`  
+  `$ npm install`  
+  `$ npm run start`  
+Notes:     
+  `npm run test` is used to run Jest.  
+  `npm run lint` is used to run EsLint.
 ## Known bugs
 * _No known bugs_.
 
