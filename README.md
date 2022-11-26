@@ -1,7 +1,7 @@
 # Project Name
 By Brian Noh  
 Epicodus Independent Project: Solar Year  
-_Currently not deployed_: [Check out the project here](noh24.github.io/solar-year)
+[Check out the project here](noh24.github.io/solar-year)
 
 ## Technologies Used  
 * HTML
